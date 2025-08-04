@@ -1,0 +1,189 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OHKA21 Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 999;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00ffff;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00ffff;
+  animation: zoomIn 2s ease;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+  </style>
+</head><body>
+  <header>
+    <h1>OHKA21</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#skills">Bahasa</a>
+      <a href="#biodata">Biodata</a>
+    </nav>
+  </header>  <section id="home">
+    <img src="https://files.catbox.moe/ekqa35.png" alt="Logo OHKA21" class="logo" />
+    <h2>OHKA21</h2>
+    <p>Selamat datang di portofolio saya. Saya adalah seorang pengembang dan penggemar teknologi dengan minat mendalam dalam bahasa pemrograman dan keamanan siber.</p>
+  </section>  <section id="skills">
+    <h2>Bahasa yang Dikuasai</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+        <h3>HTML</h3>
+      </div>
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+        <h3>CSS</h3>
+      </div>
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+        <h3>JavaScript</h3>
+      </div>
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+        <h3>Python</h3>
+      </div>
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+        <h3>Java</h3>
+      </div>
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+        <h3>PHP</h3>
+      </div>
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
+        <h3>C++</h3>
+      </div>
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" alt="Ruby">
+        <h3>Ruby</h3>
+      </div>
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go">
+        <h3>Go</h3>
+      </div>
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+        <h3>TypeScript</h3>
+      </div>
+    </div>
+  </section>  <section id="biodata">
+    <h2>Biodata</h2>
+    <p><strong>Nama:</strong> OHKA21</p>
+    <p><strong>Nomor WhatsApp:</strong> 085606213297</p>
+    <p><strong>Deskripsi:</strong> Saya adalah seorang programmer dan kreator digital yang fokus dalam keamanan siber, pengembangan web, dan otomasi sistem. Saya suka menciptakan proyek-proyek yang unik dan menantang.</p>
+  </section>
+</body></html>

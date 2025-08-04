@@ -1,2 +1,0 @@
-# portofolioku
-Portofoliokuohka
